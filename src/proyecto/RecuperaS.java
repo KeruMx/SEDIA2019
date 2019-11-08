@@ -36,7 +36,7 @@ public class RecuperaS {
 //                s[cont] = s[cont].replace("^"," ");
                 s[cont] = s[cont].replace("→"," ");
                 sp = s[cont].split(" ");
-//                System.out.println(s[cont]);
+                System.out.println(s[cont]);
                 cont++;
             }else {
                 break;
@@ -70,12 +70,17 @@ public class RecuperaS {
         Scanner scanner = new Scanner(System.in);
         sintomasPX = scanner.next();
         String[] sp;
+        int[] cc = new int[100];
         sp = sintomasPX.split(",");
         for (int i = 0; i < datos.length; i++) {
             if ((datos[i] != null)){
-//                for (int j = 0; j <sp.length ; j++)
-                    if (sp[i]!=null)
-                        System.out.println(datos[i].contains(sp[i])+"\n"+datos[i]+"\n"+sp[i]);
+                for (int j = 0; j <sp.length ; j++)
+                    if (sp[j]!=null)
+                        if (datos[j].contains(sp[i])){
+                            cc[i] = j;
+                            System.out.println("Reglas en el conjunto conflicto: "+datos[j]+" Regla no."+cc[i]);
+                        }
+//                        System.out.println(datos[j].contains(sp[i])+"\n"+datos[j]+"\n"+sp[i]);
 //                System.out.println(sp[i].charAt(2) );
 
             }
