@@ -76,7 +76,7 @@ public class RecuperaS {
 //                for (int j = 0; j <sp.length ; j++)
                     if (sp[i]!=null)
                         System.out.println(datos[i].contains(sp[i])+"\n"+datos[i]+"\n"+sp[i]);
-//                System.out.println(sp[i].charAt(2));
+//                System.out.println(sp[i].charAt(2) );
 
             }
         }
