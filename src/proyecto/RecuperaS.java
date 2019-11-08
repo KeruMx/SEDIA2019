@@ -79,6 +79,7 @@ public class RecuperaS {
                         if (datos[j].contains(sp[i])){
                             cc[i] = j;
                             System.out.println("Reglas en el conjunto conflicto: "+datos[j]+" Regla no."+cc[i]);
+
                         }
 //                        System.out.println(datos[j].contains(sp[i])+"\n"+datos[j]+"\n"+sp[i]);
 //                System.out.println(sp[i].charAt(2) );
