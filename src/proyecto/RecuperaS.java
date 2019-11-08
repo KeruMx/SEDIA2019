@@ -73,9 +73,9 @@ public class RecuperaS {
         sp = sintomasPX.split(",");
         for (int i = 0; i < datos.length; i++) {
             if ((datos[i] != null)){
-                for (int j = 0; j <sp.length ; j++)
-                    if (sp[j]!=null)
-                        System.out.println(datos[i].contains(sp[j])+"\n"+datos[i]+"\n"+sp[j]);
+//                for (int j = 0; j <sp.length ; j++)
+                    if (sp[i]!=null)
+                        System.out.println(datos[i].contains(sp[i])+"\n"+datos[i]+"\n"+sp[i]);
 //                System.out.println(sp[i].charAt(2));
 
             }

@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ef49b40-4932-48ea-aea5-e0f238b429d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/proyecto/RecuperaS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maestroPremisa" beforeDir="false" afterPath="$PROJECT_DIR$/maestroPremisa" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/ArchivoPremisas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/ArchivoPremisas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/Proyecto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/Proyecto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proyecto/ArchivoPremisas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/ArchivoPremisas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proyecto/Premisas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/Premisas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proyecto/Proyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/Proyecto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proyecto/RecuperaS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/RecuperaS.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +85,16 @@
       <workItem from="1571977170788" duration="447000" />
       <workItem from="1573183268106" duration="1220000" />
       <workItem from="1573186353651" duration="8523000" />
-      <workItem from="1573194963234" duration="8954000" />
+      <workItem from="1573194963234" duration="9266000" />
     </task>
+    <task id="LOCAL-00001" summary="Ya valió, destino por favor ayudanos v:">
+      <created>1573204323192</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573204323192</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +112,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ya valió, destino por favor ayudanos v:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ya valió, destino por favor ayudanos v:" />
   </component>
 </project>
