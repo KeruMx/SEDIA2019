@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ef49b40-4932-48ea-aea5-e0f238b429d3" name="Default Changelist" comment="" />
+    <list default="true" id="8ef49b40-4932-48ea-aea5-e0f238b429d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/proyecto/RecuperaS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maestroPremisa" beforeDir="false" afterPath="$PROJECT_DIR$/maestroPremisa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/ArchivoPremisas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/ArchivoPremisas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/Proyecto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/Proyecto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proyecto/ArchivoPremisas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/ArchivoPremisas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proyecto/Premisas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/Premisas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proyecto/Proyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/Proyecto.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SGsd0yDMxcmwNRt8dNkr9ybQgV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -20,6 +42,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunDashboard">
@@ -67,10 +90,26 @@
       <workItem from="1571201354927" duration="7276000" />
       <workItem from="1571256402349" duration="889000" />
       <workItem from="1571977170788" duration="447000" />
+      <workItem from="1573183268106" duration="1220000" />
+      <workItem from="1573186353651" duration="8523000" />
+      <workItem from="1573194963234" duration="8954000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

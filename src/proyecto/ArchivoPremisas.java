@@ -13,6 +13,7 @@ public class ArchivoPremisas {
     private int direccionSiguiente, direccionActual, borrados, desbordados, ordenados, direccionReorganizados;
     private Indice indice;
     private Premisas premisas;
+    Premisas[] premisasRecuperacion = new Premisas[100];
 
     ArchivoPremisas() throws IOException, FileNotFoundException, ClassNotFoundException {
         //registerLength = 42;
@@ -68,7 +69,7 @@ public class ArchivoPremisas {
             marcarIndice(indice.llave);
             arbol.borrar(indice.llave);
             borrados++;
-            recuperarSecuencial();
+            recuperarSecuencial(0);
             reescribirControl();
         }
     }
@@ -158,26 +159,57 @@ public class ArchivoPremisas {
         }
     }
 
-    private void muestraPremisa(Premisas l) {
-        System.out.println();
-        System.out.println(l.llave);
-        System.out.println(l.premisas);
+    private Premisas[] muestraPremisa(Premisas l,int op) {
+            System.out.println(l.premisas);
+            return premisasRecuperacion;
+
     }
 
-    private void recorreArbol(Nodo nodo, RandomAccessFile raf) throws IOException {
+    private void recorreArbol(Nodo nodo, RandomAccessFile raf,int op) throws IOException {
         if (nodo.izquierda != null) {
-            recorreArbol(nodo.izquierda, raf);
+            recorreArbol(nodo.izquierda, raf,op);
         }
         if (direccionActual != nodo.direccion) {
             raf.seek(nodo.direccion * registerLength);
             direccionActual = nodo.direccion;
         }
         premisas = recuperaPremisa(raf);
-        muestraPremisa(premisas);
+        muestraPremisa(premisas,0);
         direccionActual++;
         if (nodo.derecha != null) {
-            recorreArbol(nodo.derecha, raf);
+            recorreArbol(nodo.derecha, raf,op);
         }
+    }
+    Premisas[] recorreArbolArray(Nodo nodo, RandomAccessFile raf,int op) throws IOException {
+        if (nodo.izquierda != null) {
+            recorreArbolArray(nodo.izquierda, raf,op=op+1);
+        }
+        if (direccionActual != nodo.direccion) {
+            raf.seek(nodo.direccion * registerLength);
+            direccionActual = nodo.direccion;
+        }
+        premisasRecuperacion[op] = recuperaPremisa(raf);
+        direccionActual++;
+        if (nodo.derecha != null) {
+            recorreArbolArray(nodo.derecha, raf,op=op+1);
+        }
+        return premisasRecuperacion;
+    }
+    Premisas[] getArray(Nodo nodo, RandomAccessFile raf,int op) throws IOException {
+        if (nodo.izquierda != null) {
+            recorreArbolArray(nodo.izquierda, raf,op=op+1);
+        }
+        if (direccionActual != nodo.direccion) {
+            raf.seek(nodo.direccion * registerLength);
+            direccionActual = nodo.direccion;
+        }
+//        premisas = recuperaPremisa(raf);
+        premisasRecuperacion[op] = recuperaPremisa(raf);
+        direccionActual++;
+        if (nodo.derecha != null) {
+            recorreArbolArray(nodo.derecha, raf,op=op+1);
+        }
+        return premisasRecuperacion;
     }
 
     private void recorreArbolReestructurar(Nodo nodo, RandomAccessFile lector, RandomAccessFile escritor) throws IOException {
@@ -211,12 +243,12 @@ public class ArchivoPremisas {
             lector = new RandomAccessFile("maestroPremisa", "r");
             lector.seek(indice.direccion * registerLength);
             premisas = recuperaPremisa(lector);
-            muestraPremisa(premisas);
+            muestraPremisa(premisas,0);
             lector.close();
         }
     }
 
-    private void recuperarArbol() throws IOException {
+    Arbol recuperarArbol() throws IOException {
         boolean existe = true;
         RandomAccessFile lector = null;
         arbol = new Arbol();
@@ -234,6 +266,7 @@ public class ArchivoPremisas {
             }
             lector.close();
         }
+        return arbol;
     }
 
     private void recuperarControl() throws IOException {
@@ -262,7 +295,7 @@ public class ArchivoPremisas {
         return i;
     }
 
-    private Premisas recuperaPremisa(RandomAccessFile lector) throws IOException {
+    Premisas recuperaPremisa(RandomAccessFile lector) throws IOException {
         int c;
         char nombreT[] = new char[100];
         Premisas l = new Premisas();
@@ -275,7 +308,7 @@ public class ArchivoPremisas {
         return l;
     }
 
-    public void recuperarSecuencial() throws FileNotFoundException, IOException {
+    public void recuperarSecuencial(int op) throws FileNotFoundException, IOException {
         boolean existe = true;
         RandomAccessFile lector = null;
         direccionActual = 0;
@@ -285,7 +318,13 @@ public class ArchivoPremisas {
             existe = false;
         }
         if (existe) {
-            recorreArbol(arbol.raiz, lector);
+            if (op==0){
+                recorreArbol(arbol.raiz, lector,0);
+            }
+            else
+            {
+                recorreArbol(arbol.raiz,lector,1);
+            }
             lector.close();
         }
     }
