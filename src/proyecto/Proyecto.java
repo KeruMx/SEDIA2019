@@ -16,6 +16,7 @@ public class Proyecto {
         {
             System.out.println("Escribe 1 para Modificación de Base de Conocimiento");
             System.out.println("Escribe 2 para el Sistema Experto Determinista");
+            System.out.println("Escribe 3 para Salir");
             accion2 = sc.nextInt();
             switch (accion2){
                 case 1:

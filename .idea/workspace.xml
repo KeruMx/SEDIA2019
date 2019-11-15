@@ -3,7 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8ef49b40-4932-48ea-aea5-e0f238b429d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlPremisa" beforeDir="false" afterPath="$PROJECT_DIR$/controlPremisa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indicePremisa" beforeDir="false" afterPath="$PROJECT_DIR$/indicePremisa" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maestroPremisa" beforeDir="false" afterPath="$PROJECT_DIR$/maestroPremisa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/Nodo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/Nodo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/Proyecto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proyecto_2IA/proyecto/Proyecto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proyecto/Nodo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/Nodo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proyecto/Proyecto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/Proyecto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/proyecto/RecuperaS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/proyecto/RecuperaS.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,7 +98,7 @@
       <workItem from="1571977170788" duration="447000" />
       <workItem from="1573183268106" duration="1220000" />
       <workItem from="1573186353651" duration="8523000" />
-      <workItem from="1573194963234" duration="13602000" />
+      <workItem from="1573194963234" duration="36210000" />
     </task>
     <task id="LOCAL-00001" summary="Ya valió, destino por favor ayudanos v:">
       <created>1573204323192</created>
@@ -129,7 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573204999615</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Equiparacion 30% del sistema">
+      <created>1573233213948</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573233213948</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Equiparacion 30% del sistema">
+      <created>1573233327849</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573233327849</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ya valió, destino por favor ayudanos v:" />
     <MESSAGE value="Ya valió, destino por favor ayudanos v: n" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ya valió, destino por favor ayudanos v: n" />
+    <MESSAGE value="Equiparacion 30% del sistema" />
+    <option name="LAST_COMMIT_MESSAGE" value="Equiparacion 30% del sistema" />
   </component>
 </project>

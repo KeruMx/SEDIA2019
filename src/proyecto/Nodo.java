@@ -11,7 +11,6 @@ public class Nodo {
         this.izquierda = izquierda;
         this.derecha = derecha;
     }
-
     Nodo(int llave, int direccion) {
         this.llave = llave;
         this.direccion = direccion;
