@@ -1,5 +1,7 @@
 package proyecto;
 
+import com.sun.org.apache.xpath.internal.objects.XNull;
+
 import javax.swing.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -75,11 +77,11 @@ public class RecuperaS {
         String[] sResultados = new String[100];
         int[] cc = new int[100];
         sp = sintomasPX.split(",");
-        for (int i = 0; i < datos.length; i++)
-            if (datos[i]!=null) {
-                sResultados[i] = datos[i].split(" ")[1];
-                System.out.println(sResultados[i]);
-            }
+//        for (int i = 0; i < datos.length; i++)
+//            if (datos[i]!=null) {
+//                sResultados[i] = datos[i].split(" ")[1];
+//                System.out.println(sResultados[i]);
+//            }
 
         for (int i = 0; i < sp.length; i++) {
             if ((sp[i] != null)){
@@ -96,7 +98,7 @@ public class RecuperaS {
 
                         }
                 else break;
-//                        System.out.println(datos[j].contains(sp[i])+"\n"+datos[j]+"\n"+sp[i]);
+//                System.out.println(datos[j].contains(sp[i])+"\n"+datos[j]+"\n"+sp[i]);
 //                System.out.println(sp[i].charAt(2) );
 //                System.out.println(datos[]);
 
@@ -104,25 +106,35 @@ public class RecuperaS {
         }
         //Inferencia
         boolean bandera=false;
+        String[] inf = new String[100];
         for (int i = 0; i < cc.length; i++) {
-            if (cc[i]!=0)
+            if (cc[i]!=0) {
                 for (int j = 0; j < sp.length; j++) {
-                    if(datos[cc[i]-1].contains(sp[j])){
-                        System.out.println("Si la tiene");
-//                        bandera = true;
+                    if (datos[cc[i] - 1].contains(sp[j])) {
+//                        System.out.println("Si la tiene");
+//                        bandera = false;
+                    } else {
+                        bandera = false;
+                        System.out.println("no");
                     }
-                    else{
-                        bandera=false;
-                        System.out.println("no hace nad aprro");
-                    }
-                    if (bandera){
-                        if (cc[i]!=0)
-                            System.out.println(datos[cc[i]-1].split(" ")[1]);
+                    System.out.println(bandera);
+                    if (bandera) {
+                        if (cc[i] != 0) {
+                            inf[i] = datos[cc[i] - 1].split(" ")[1];
+                        }
                     }
                     bandera = true;
                 }
-
+            }
+            bandera = false;
         }
-
+        String aux;
+        for (int i = 0; i < inf.length; i++) {
+            if (inf[i]!=null){
+                aux = inf[i+1];
+                if (!inf[i].equals(aux))
+                System.out.println(inf[i]);
+            }
+        }
     }
 }
